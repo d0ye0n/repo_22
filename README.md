@@ -116,12 +116,17 @@ ___jobs로 알 수 있는 상태 값___
 kill 명령어는 대부분 프로세스를 종료시킬때 사용하는 명령어이다.
 
 + 시그널은 지정하지 않을 경우 기본 값인 정상 종료(15, SIGTERM) 시그널을 보낸다.
+
 *kill [pid]*
 
 +시그널 지정
+
 *kill -s [signal id][pid]*
+
 *kill -s [signal text][pid]*
+
 *kill -[signal id][pid]*
+
 *kill -[signal text][pid]*
 
 
@@ -171,6 +176,20 @@ kill 명령어는 대부분 프로세스를 종료시킬때 사용하는 명령�
 <img src="https://user-images.githubusercontent.com/106876869/172041008-1260cbce-fdd7-44a8-9929-f786c6efcd36.PNG" width ="60%" height="60%"/>
 
 그리고 문장의 마지막 글자인 d로 이동하여 (( ))를 붙여 준다. 그리고 다시 **q**를 눌러 매크로를 종료시킨다. 
+
+<img src="https://user-images.githubusercontent.com/106876869/172043849-df9d0762-0d58-45d6-a66a-8101ca2f2ab1.PNG" width ="60%" height="60%"/>
+
+다음 매크로를 실행시키기 위해 @a를 입력하면 각 글자가 다음 사진과 같이 변한다. 이와 같이 매크로를 사용할 수 있다. 정리해보자면 다음과 같다.
+
+___매크로 사용법___
+1) 매크로 시작 = q[name]
+2) 매크로 입력
+3) 매크로 종료 = q
+4) 매크로 실행 = @[name]
+5) 매크로 여러번 실행 = [number]@[name]
+
+***:u = 작업 되돌리기***
+
 
 
 
